@@ -160,7 +160,7 @@ class Config:
                 / 1024
                 + 0.4
             )
-            if self.gpu_mem <= 4:
+            if self.gpu_mem <= 12:
                 with open("infer/modules/train/preprocess.py", "r") as f:
                     strr = f.read().replace("3.7", "3.0")
                 with open("infer/modules/train/preprocess.py", "w") as f:
